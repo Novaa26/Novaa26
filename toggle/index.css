@@ -1,0 +1,62 @@
+@import url("theme-toggle.css");
+
+/* Gantikan @custom-media dengan media query langsung */
+@media (prefers-reduced-motion: no-preference) {
+  /* Masukkan aturan yang ingin kamu jalankan jika motion diperbolehkan */
+}
+
+/* Reset dan dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+@supports not (color-scheme: dark) {
+  html[data-theme="dark"] {
+    background: #111;
+  }
+}
+
+body {
+  min-height: 100%;
+  font-family: system-ui, sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+/* .github-corner styling */
+.github-corner {
+  fill: hotpink;
+  color: Canvas;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+/* Gantikan @nest [data-theme="dark"] & dengan selector biasa */
+[data-theme="dark"] .github-corner {
+  fill: indigo;
+}
+
+/* Animasi */
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}

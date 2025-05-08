@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="beranda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+
+    <header>    
+        <nav>
+            <ul class='nav-bar'>
+                <!-- <li class='logo'><a href='#'><img src='foto/log.jpg'/></a></li> -->
+                <li class='logo'><a href='#'><img src=''/>Jempol</a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="">Beranda</a></li>
+                    <li><a href="sejarah.html">Sejarah</a></li>
+                    <li><a href="lokasi.html">Lokasi</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle" />
+      <span class="slider"></span>
+      <span class="clouds_stars"></span>
+    </label>
+
+    <div class="stars"></div>
+    <div class="shooting-stars"></div>
+    
+    <section class="hero">
+        <h1>Selamat datang di Candi Plaosan</h1>
+        <p>Temukan keindahan dan sejarah candi Buddha yang terletak di Klaten, Jawa Tengah.</p>
+        <button onclick="learnMore()">Pelajari Lebih Lanjut</button>
+      </section>
+
+    <section class="destination-info">
+        <h2>Destination Info</h2>
+        <p>Berikut adalah beberapa informasi penting tentang Candi Plaosan yang perlu Anda ketahui sebelum mengunjunginya.</p>
+        <div class="info-cards">
+          <div class="info-card hidden left">
+            <h3><span class="highlight">±13K</span><span class="plus">+</span></h3>
+            <p>Plaosan telah menerima kurang lebih 13 ribu pengunjung setiap tahun</p>
+          </div>
+          <div class="info-card hidden bawah">
+            <h3><span class="highlight">753</span><span class="plus">+</span></h3>
+            <p>Plaosan telah dikunjungi oleh 753 wisatawan mancanegara pada tahun 2020</p>
+          </div>
+          <div class="info-card hidden right">
+            <h3><span class="highlight">12</span><span class="plus">+</span></h3>
+            <p>Plaosan telah mempersembahkan 12 event setiap tahun</p>
+          </div>
+        </div>
+      </section>    
+
+      <section class="history-section">
+        <div class="history-images">
+          <img src="foto/plaosan5.jpg" class="img-top" alt="Candi Prambanan">
+          <img src="foto/Sejarah-Candi-Plaosan-Dibangun-Oleh-Pasangan-yang-Beda-Agama.webp" class="img-bottom" alt="Relief Candi">
+        </div>
+        <div class="history-content">
+          <h2>Sejarah Plaosan</h2>
+          <p>
+            Candi ini terletak kira-kira satu kilometer ke arah timur-laut dari Candi Sewu atau Candi Prambanan. Adanya kemuncak stupa, arca Buddha, serta candi-candi perwara (pendamping/kecil) yang berbentuk stupa menandakan bahwa candi-candi tersebut adalah candi Buddha. Kompleks ini dibangun pada abad ke-9 oleh Raja Rakai Pikatan dan Sri Kahulunan pada zaman Kerajaan Medang, atau juga dikenal dengan nama Kerajaan Mataram Kuno. Menurut sejarahnya, pada zaman kerajaan dulu, seorang Raja bernama Pikatan memberikan sebuah persembahan kepada Pramuda Wardhani sebagai tanda cinta. Raja Pikatan dan Wardhani memiliki perbedaan latar belakang kepercayaan, Hindu dan Buddha. Candi Plaosan merupakan persembahan cinta Raja Pikatan kepada Wardhani yang memiliki unsur campuran dua agama yaitu Hindu dan Buddha. Oleh sebab itulah maka Candi Plaosan melambangkan keharmonisan antara dua agama yang berbeda.
+
+          </p>
+
+          <a href="#" class="btn-green">Lihat Selengkapnya</a>
+        </div>
+      </section>
+      <section class="attractions">
+        <h2>Tradisi Candi Plaosan</h2>
+        <p>
+          Temukan berbagai atraksi yang diselenggarakan di sekitar Candi Plaosan dan
+          rencanakan kunjungan Anda untuk mengalami momen tak terlupakan.
+        </p>
+        <button class="see-more">Lihat Lainnya ↗</button>
+      
+        <div class="card-container">
+          <!-- Kartu 1 -->
+          <div class="card hidden left">
+            <div class="card-img-wrapper">
+              <img src="foto/candikembar.jpg" alt="Dramatari Roro Jonggrang" class="card-img" />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span>📅</span> <span>Ramayana Ballet Prambanan</span>
+              </div>
+              <h3>Festival Candi Kembar</h3>
+              <p>Festival Candi Kembar adalah event tahunan yang digelar di kompleks Candi Plaosan, Desa Bugisan...</p>
+            </div>
+          </div>
+      
+          <!-- Kartu 2 -->
+          <div class="card hidden bawah">
+            <div class="card-img-wrapper">
+              <img src="foto/Gunungan.jpeg" alt="Sendratari Ramayana" class="card-img" />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span>📅</span> <span>Ramayana Ballet Prambanan</span>
+              </div>
+              <h3>Tradisi Gunungan</h3>
+              <p>Gunungan Candi Plaosan merupakan bagian dari perayaan Festival Candi Kembar...</p>
+            </div>
+          </div>
+      
+          <!-- Kartu 3 -->
+          <div class="card hidden right">
+            <div class="card-img-wrapper">
+              <img src="foto/PlaosanLor.jpg" alt="Candi Kembar" class="card-img" />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span>📅</span> <span>Candi Kembar</span>
+              </div>
+              <h3>Candi Kembar</h3>
+              <p>Candi Plaosan disebut juga sebagai candi kembar, karena kompleks ini terdiri dari dua bagian utama...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vanue">
+        <h2>Plaosan Vanue</h2>
+        <p>Daya Tarik Wisata Candi Plaosan</p>
+        <div class="venue-slider-wrapper">
+          <button class="slide-btn prev">‹</button>
+        <div class="venue-container">
+          <div class="venue-card">
+            <img src="foto/archa.jpg" alt="Taman Candi Sewu" />
+            <div class="overlay">
+              <h3>Arsitektur Memukau</h3>
+              <p>
+                Candi Plaosan memiliki detail ukiran yang rumit dan penuh makna. Setiap relief yang terpahat di dinding candi menceritakan kisah-kisah kehidupan Buddha, flora, fauna, hingga figur manusia. Keindahan ini menjadi daya tarik utama bagi pecinta sejarah dan seni.
+              </p>
+            </div>
+          </div>
+          
+          <div class="venue-card">
+            <img src="foto/sunrise.jpeg" alt="Taman Agastya Prambanan" />
+            <div class="overlay">
+              <h3>Pemandangan Sunrise</h3>
+              <p>Salah satu daya tarik utama Candi Plaosan adalah pemandangan matahari terbitnya. Dengan latar belakang candi yang megah, cahaya keemasan pagi menciptakan suasana magis yang sangat Instagramable. Banyak fotografer datang untuk mengabadikan momen tersebut.</p>
+            </div>
+          </div>
+        
+          <div class="venue-card">
+            <img src="foto/fotografi.jpg" alt="Rama Shinta Camping Ground" />
+            <div class="overlay">
+              <h3>Lokasi Fotografi Favorit</h3>
+              <p>Candi Plaosan menjadi salah satu tempat favorit bagi pasangan yang ingin melakukan sesi prewedding. Keindahan arsitektur candi, taman hijau, dan suasana yang tenang menciptakan latar belakang yang sempurna untuk berbagai keperluan fotografi.</p>
+            </div>
+          </div>
+
+          <div class="venue-card">
+            <img src="foto/fotografi.jpg" alt="Rama Shinta Camping Ground" />
+            <div class="overlay">
+              <h3>Kegiatan Wisata</h3>
+              <p>Di Candi Plaosan, pengunjung dapat melakukan berbagai kegiatan wisata, seperti berfoto dengan latar belakang candi, belajar tentang sejarah dan budaya melalui pemandu wisata, serta menikmati suasana tenang sambil berjalan-jalan di sekitar kompleks candi. Selain itu, terdapat juga berbagai acara budaya dan festival yang sering diadakan di area candi, menambah daya tarik wisatawan untuk berkunjung.</p>
+            </div>
+          </div>
+
+          <div class="venue-card">
+            <img src="foto/fotografi.jpg" alt="Rama Shinta Camping Ground" />
+            <div class="overlay">
+              <h3>Candi Simbol Kerukunan Beragama</h3>
+              <p>Sesuai dengan sejarah yang terkandung dalam candi ini, bahwa candi ini dibuat oleh seorang yang beragama Hindu dan diperuntukkan bagi seorang yang beragama Budha. Tidak hanya itu, walaupun candi ini adalah candi Budha, namun bangunan candi ini mengandung unsur arsitektur Budha dan Hindu. Disini kita bisa melihat bahwa kerukunan antar umat beragama di Indonesia sudah ada sejak masa lampau.</p>
+            </div>
+          </div>
+
+          <div class="venue-card">
+            <img src="foto/fotografi.jpg" alt="Rama Shinta Camping Ground" />
+            <div class="overlay">
+              <h3>Candi Kembar</h3>
+              <p>Candi Plaosan terbagi menjadi dua yaitu Candi Plaosan Lor (Utara) dan Candi Plaosan Kidul (Selatan), kedua candi ini memiliki bentuk yang sama, hal ini lah yang menjadikan Candi Plaosan disebut sebagai candi kembar. Candi Plaosan Lor memiliki dua candi utama yaitu candi induk utara dan candi induk selatan. Candi induk utara dihiasi dengan relief yang bergambar wanita dan candi induk selatan dihiasi dengan relief bergambar laki-laki. Sedangkan Candi Plaosan Kidul belum diketahui memiliki candi induk. Namun pada kompleks ini terdapat perwara berbentuk candi dan stupa. Tidak hanya itu, teras yang berada di bangunan utama candi tersusun rapi dan halus, hal ini menandakan bahwa dulunya teras tersebut digunakan sebagai Vihara untuk sembahyang sang istri Rakai Pikatan dan para pengikutnya.</p>
+            </div>
+          </div>
+        </div>
+        <button class="slide-btn next">›</button>
+      </div>
+      </section>
+      
+
+      <section class="galeri-section">
+        <h2>Plaosan Galeri</h2>
+        <div class="galeri-grid">
+          <div class="galeri-large">
+            <img src="foto/candi-plaosan-profile1670957627.jpeg" alt="Candi 1" />
+          </div>
+          <div class="galeri-small">
+            <img src="foto/CandiPlaosanHD.jpg" alt="Candi 2" />
+            <img src="foto/Gunungan.jpeg" alt="Candi 3" />
+            <img src="foto/galerry.jpeg" alt="Candi 4" />
+            <img src="foto/galery.jpeg" alt="Candi 5" />
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        <div class="footer-container">
+    
+            <!-- Tentang Kami -->
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Kami adalah platform yang menyediakan informasi dan layanan terbaik untuk Anda. Kami berkomitmen memberikan pengalaman terbaik bagi pengguna.</p>
+            </div>
+    
+
+    
+            <!-- Navigasi -->
+            <div class="footer-section">
+              <div class="nav">
+                <h3>Navigasi</h3>
+                <a href="#">Beranda</a>
+                <a href="#">Layanan</a>
+                <a href="#">Kontak</a>
+                <a href="#">Tentang</a>
+              </div>
+            </div>
+
+
+
+                        <!-- Sosial Media -->
+              <div class="wrapper">
+                <a href="#" class="button">
+                  <div class="icon">
+                      <i class="fab fa-facebook-f"></i>
+                  </div>
+                  <!-- <span>Facebook</span> -->
+                </a>
+                <a href="#" class="button">
+                  <div class="icon">
+                    <i class="fab fa-x-twitter"></i>
+                  </div>
+                  <span>Twitter</span>
+                </a>
+                <a href="#" class="button">
+                  <div class="icon">
+                      <i class="fab fa-instagram"></i>
+                  </div>
+                  <span>Instagram</span>
+                </a>
+                <a href="#" class="button">
+                  <div class="icon">
+                      <i class="fab fa-github"></i>
+                  </div>
+                  <span>Github</span>
+                </a>
+                <a href="http://www.youtube.com/c/KimberlyHimeKu?sub_confirmation=1" class="button">
+                  <div class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </div>
+                  <span>YouTube</span>
+                </a>
+            </div>
+          </div>
+
+          <div class="footer-containerbt">
+
+            <div class="jl">
+              <p>Jl. Wahidin Sudiro Husodo No.22, Bramen, Sekarsuli, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah 57432</p>
+            </div>
+          </div>
+    
+ 
+        <div class="fo">
+        <p style="margin-top: 20px;">&copy; 2025 JIL plaosan. Semua Hak Dilindungi.</p>
+      </div>
+      </footer>
+    
+
+      <script>
+        window.addEventListener("scroll", function () {
+          const navbar = document.querySelector(".nav-bar");
+          if (window.scrollY > 50) {
+            navbar.classList.add("scrolled"); // Tambah transparan
+          } else {
+            navbar.classList.remove("scrolled"); // Tetap hitam
+          }
+        });
+
+
+        const checkbox = document.getElementById('darkModeToggle');
+
+        // Cek preferensi saat halaman dimuat
+        const darkMode = localStorage.getItem('dark-mode');
+        if (darkMode === 'enabled') {
+          document.body.classList.add('dark-mode');
+          checkbox.checked = true;
+        }
+
+        // Saat toggle diklik
+        checkbox.addEventListener('change', () => {
+          if (checkbox.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('dark-mode', 'enabled');
+          } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('dark-mode', 'disabled');
+          }
+        });
+
+        let activeStars = 0;
+        const maxStars = 5; // Maksimal jumlah bintang jatuh sekaligus di layar
+
+        function createShootingStar() {
+          if (!document.body.classList.contains("dark-mode") || activeStars >= maxStars) return;
+
+          const star = document.createElement("div");
+          star.classList.add("shooting-star");
+
+          const startX = Math.random() * window.innerWidth;
+          const startY = Math.random() * window.innerHeight * 0.4;
+          const duration = 1.5 + Math.random() * 1.5;
+
+          star.style.left = `${startX}px`;
+          star.style.top = `${startY}px`;
+          star.style.animationDuration = `${duration}s`;
+
+          document.querySelector(".shooting-stars").appendChild(star);
+          activeStars++;
+
+          setTimeout(() => {
+            star.remove();
+            activeStars--;
+          }, duration * 1000);
+        }
+
+        // Interval bintang jatuh lebih jarang: setiap 700–1500ms
+        setInterval(() => {
+          createShootingStar();
+        }, 700 + Math.random() * 800);
+
+        const container = document.querySelector('.venue-container');
+        const nextBtn = document.querySelector('.slide-btn.next');
+        const prevBtn = document.querySelector('.slide-btn.prev');
+
+        const cardWidth = 320; // ukuran kartu + gap
+
+        nextBtn.addEventListener('click', () => {
+          container.scrollLeft += cardWidth * 1;
+        });
+
+        prevBtn.addEventListener('click', () => {
+          container.scrollLeft -= cardWidth * 1;
+        });
+
+      //         const observer = new IntersectionObserver((entries) => {
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       entry.target.classList.add('show');
+      //     } else {
+      //       entry.target.classList.remove('show');
+      //     }
+      //   });
+      // });
+
+      // const hiddenElements = document.querySelectorAll('.hidden');
+      // hiddenElements.forEach(el => observer.observe(el));
+      
+      </script>
+      
+</body>
+</html>
