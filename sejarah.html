@@ -195,68 +195,7 @@
       
       
 
-    <script>
-               window.addEventListener("scroll", function () {
-          const navbar = document.querySelector(".nav-bar");
-          if (window.scrollY > 50) {
-            navbar.classList.add("scrolled"); // Tambah transparan
-          } else {
-            navbar.classList.remove("scrolled"); // Tetap hitam
-          }
-        });
-
-
-        const checkbox = document.getElementById('darkModeToggle');
-
-        // Cek preferensi saat halaman dimuat
-        const darkMode = localStorage.getItem('dark-mode');
-        if (darkMode === 'enabled') {
-          document.body.classList.add('dark-mode');
-          checkbox.checked = true;
-        }
-
-        // Saat toggle diklik
-        checkbox.addEventListener('change', () => {
-          if (checkbox.checked) {
-            document.body.classList.add('dark-mode');
-            localStorage.setItem('dark-mode', 'enabled');
-          } else {
-            document.body.classList.remove('dark-mode');
-            localStorage.setItem('dark-mode', 'disabled');
-          }
-        });
-
-
-        let activeStars = 0;
-        const maxStars = 5; // Maksimal jumlah bintang jatuh sekaligus di layar
-
-        function createShootingStar() {
-          if (!document.body.classList.contains("dark-mode") || activeStars >= maxStars) return;
-
-          const star = document.createElement("div");
-          star.classList.add("shooting-star");
-
-          const startX = Math.random() * window.innerWidth;
-          const startY = Math.random() * window.innerHeight * 0.4;
-          const duration = 1.5 + Math.random() * 1.5;
-
-          star.style.left = `${startX}px`;
-          star.style.top = `${startY}px`;
-          star.style.animationDuration = `${duration}s`;
-
-          document.querySelector(".shooting-stars").appendChild(star);
-          activeStars++;
-
-          setTimeout(() => {
-            star.remove();
-            activeStars--;
-          }, duration * 1000);
-        }
-
-        // Interval bintang jatuh lebih jarang: setiap 700–1500ms
-        setInterval(() => {
-          createShootingStar();
-        }, 700 + Math.random() * 800);
+    <script src="script.js">
     </script>
       
 </body>
