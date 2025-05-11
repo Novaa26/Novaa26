@@ -1133,8 +1133,8 @@
   }
 
   .venue-card {
-    width: 250px;
-    height: 350px;
+    width: 240px;
+    height: 330px;
   }
 
   .slide-btn {
@@ -1161,7 +1161,7 @@
   }
   .overlay h3 {
     font-size: 1.2rem;
-    margin-bottom: 130px;
+    margin-bottom: 110px;
   }
   
   .overlay p {
