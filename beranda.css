@@ -623,10 +623,11 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    background: #8bc34a;
+    /* background: #8bc34a; */
+    background: transparent;
     border: none;
-    color: white;
-    font-size: 1.5rem;
+    color: #8bc34a;
+    font-size: 2.5rem;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -635,7 +636,8 @@
   }
   
   .slide-btn:hover {
-    background: #689f38;
+    /* background: #689f38; */
+    background: transparent;
   }
   
   .slide-btn.prev {
@@ -645,10 +647,9 @@
   .slide-btn.next {
     right: 10px;
   }
-  
-  
-  
+
   .venue-card {
+    margin-left: 10px;
     flex: 0 0 auto; /* agar tidak mengecil atau membesar */
     width: 300px;
     height: 400px;
@@ -692,8 +693,8 @@
   }
   
   .overlay h3 {
-    font-size: 1.3rem;
-    margin-bottom: 130px;
+    font-size: 1.2rem;
+    margin-bottom: 100px;
   }
   
   .overlay p {
@@ -1123,6 +1124,47 @@
   .card {
     width: 90%;
   }
+  .vanue {
+    margin-left: 0;
+    width: 100%;
+  }
+  .venue-container {
+    gap: 10px;
+  }
+
+  .venue-card {
+    width: 260px;
+  }
+
+  .slide-btn {
+    font-size: 2rem;
+    width: 36px;
+    height: 36px;
+  }
+  .slide-btn.prev {
+    left: 35px;
+  }
+  .slide-btn.next {
+    right: 45px;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    transform: translateY(85%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .venue-card:hover .overlay {
+    transform: translateY(0%);
+  }
+
+
+
   .footer-section {
     margin-bottom: -60px;
   }
@@ -1204,6 +1246,6 @@
     left: 10px;
     width: 380px;
   }
+  }
 
-}
 

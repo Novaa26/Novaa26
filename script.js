@@ -88,6 +88,24 @@
     container.scrollLeft -= cardWidth * 1;
   });
 
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".venue-card");
+
+    function isMobile() {
+      return window.innerWidth <= 768;
+    }
+
+    cards.forEach(card => {
+      const overlay = card.querySelector(".overlay");
+      card.addEventListener("click", () => {
+        if (isMobile()) {
+          overlay.classList.toggle("show");
+        }
+      });
+    });
+  });
+
 //         const observer = new IntersectionObserver((entries) => {
 //   entries.forEach((entry) => {
 //     if (entry.isIntersecting) {
