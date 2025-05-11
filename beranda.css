@@ -694,7 +694,7 @@
   
   .overlay h3 {
     font-size: 1.2rem;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
   }
   
   .overlay p {
@@ -1133,7 +1133,8 @@
   }
 
   .venue-card {
-    width: 260px;
+    width: 255px;
+    height: 350px;
   }
 
   .slide-btn {
@@ -1157,6 +1158,15 @@
     padding: 10px;
     transform: translateY(85%);
     transition: transform 0.3s ease-in-out;
+  }
+  .overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 140px;
+  }
+  
+  .overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 50px;
   }
 
   .venue-card:hover .overlay {
