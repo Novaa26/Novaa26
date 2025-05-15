@@ -130,8 +130,8 @@
 
   
   .logo img {width: 40px;}
-  .menu {display: flex;}
-  .menu li {padding-left: 30px;}
+  .menu {display: flex; margin-right: 70px;}
+  .menu li {padding-left: 70px;}
   .menu li a {
       padding: 10px;
       display: inline-block;

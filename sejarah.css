@@ -413,6 +413,42 @@
     background-color: white;
   }
 
+    .galeri-section {
+    text-align: center;
+    padding: 60px 20px; /* kurangi padding kiri-kanan */
+    background: transparent;
+    max-width: 1200px;
+    margin: 0 auto; /* ⬅️ posisikan ke tengah halaman */
+  }
+  
+  .galeri-section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 10%;
+    font-weight: bold;
+    color: var(--color2);
+  }
+  
+  .galeri-grid {
+    display: flex;
+    gap: 20px; /* jarak antar kolom */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+    .galeri-small {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    flex: 1 1 400px;
+  }
+  
+  .galeri-small img {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
       /* Styling Footer */
       footer {
         position: relative;
