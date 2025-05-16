@@ -540,6 +540,18 @@
         max-width: 100%;
       }
     }
+    .ticket {
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+    }
+    .ticket p {
+      justify-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 50%;
+    }
     .tiket {
       margin: 20px 0 30px 0 ;
       gap: 40px;
